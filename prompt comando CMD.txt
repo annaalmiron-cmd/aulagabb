@@ -1,0 +1,124 @@
+O Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Instale o PowerShell mais recente para obter novos recursos e aprimoramentos! https://aka.ms/PSWindows
+
+PS C:\Users\aluno\Desktop\projeto> mkdir assets
+
+
+    Diretório: C:\Users\aluno\Desktop\projeto
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        30/06/2026     21:56                assets
+
+
+PS C:\Users\aluno\Desktop\projeto> mkdir assets\css
+
+
+    Diretório: C:\Users\aluno\Desktop\projeto\assets
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        30/06/2026     21:56                css
+
+
+PS C:\Users\aluno\Desktop\projeto> mkdir assets\img
+
+
+    Diretório: C:\Users\aluno\Desktop\projeto\assets
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        30/06/2026     21:56                img
+
+
+PS C:\Users\aluno\Desktop\projeto> mkdir assets\videos
+
+
+    Diretório: C:\Users\aluno\Desktop\projeto\assets
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        30/06/2026     21:56                videos
+
+
+PS C:\Users\aluno\Desktop\projeto> move estilo.css assets\css
+move : Não é possível localizar o caminho 'C:\Users\aluno\Desktop\projeto\estilo.css' porque ele não existe.
+No linha:1 caractere:1
++ move estilo.css assets\css
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\aluno\...jeto\estilo.css:String) [Move-Item], ItemNotFoundExce
+   ption
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\aluno\Desktop\projeto> move estilo.css assets\css
+PS C:\Users\aluno\Desktop\projeto> move videos.css assets\css
+PS C:\Users\aluno\Desktop\projeto> move imagem1.jpg assets\img
+move : Não é possível localizar o caminho 'C:\Users\aluno\Desktop\projeto\imagem1.jpg' porque ele não existe.
+No linha:1 caractere:1
++ move imagem1.jpg assets\img
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\aluno\...eto\imagem1.jpg:String) [Move-Item], ItemNotFoundExce
+   ption
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\aluno\Desktop\projeto> move imagem1.jpg assets\img
+PS C:\Users\aluno\Desktop\projeto> move imagem2.jpg assets\img
+PS C:\Users\aluno\Desktop\projeto> move imagem3.jpg assets\img
+PS C:\Users\aluno\Desktop\projeto> move imagem4.jpg assets\img
+PS C:\Users\aluno\Desktop\projeto> move imagem5.jpg assets\img
+PS C:\Users\aluno\Desktop\projeto> move imagem6.jpg assets\img
+PS C:\Users\aluno\Desktop\projeto> move video1.mp4 assets\videos
+move : Não é possível localizar o caminho 'C:\Users\aluno\Desktop\projeto\video1.mp4' porque ele não existe.
+No linha:1 caractere:1
++ move video1.mp4 assets\videos
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\aluno\...jeto\video1.mp4:String) [Move-Item], ItemNotFoundExce
+   ption
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\aluno\Desktop\projeto> move video1.mp4 assets\videos
+PS C:\Users\aluno\Desktop\projeto> move video2.mp4 assets\videos
+PS C:\Users\aluno\Desktop\projeto> dir
+
+
+    Diretório: C:\Users\aluno\Desktop\projeto
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        30/06/2026     21:56                assets
+-a----        30/06/2026     21:50              0 index.html
+-a----        30/06/2026     21:50              0 videos.html
+
+
+PS C:\Users\aluno\Desktop\projeto> tree /f
+Listagem de caminhos de pasta
+O número de série do volume é 00000071 1A71:4C69
+C:.
+│   index.html
+│   videos.html
+│
+└───assets
+    ├───css
+    │       estilo.css
+    │       videos.css
+    │
+    ├───img
+    │       imagem1.jpg
+    │       imagem2.jpg
+    │       imagem3.jpg
+    │       imagem4.jpg
+    │       imagem5.jpg
+    │       imagem6.jpg
+    │
+    └───videos
+            video1.mp4
+            video2.mp4
+
+PS C:\Users\aluno\Desktop\projeto>
